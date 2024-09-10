@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijos de Ministros - Proyectos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Arial', sans-serif;
+    }
+    .projects-container {
+      max-width: 1500px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .projects-container h1 {
+      text-align: center;
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background-color: #fff;
+      border-radius: 1px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    .project img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .project:hover img {
+      transform: scale(1.2);
+    }
+    .project-content {
+      padding: 1.5rem;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #fff;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .project:hover .project-content {
+      transform: translateY(0);
+    }
+    .project h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+    .project p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/logo (2).svg" alt="HDM" height="40">
+      <img src="/img/LG-asambleas.png" alt="HDM" height="40">
+    </div>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="oracion.html">Oración</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <div class="projects-container">
+    <h1>Nuestros Proyectos</h1>
+    <div class="projects">
+      <a href="escuela-biblica.html" class="project">
+        <img src="img/ebdv-flayerr.png" alt="Escuela Bíblica de Vacaciones">
+        <div class="project-content">
+          <h2>Escuela Bíblica de Vacaciones</h2>
+          <p>Programa educativo y divertido para niños durante las vacaciones.</p>
+        </div>
+      </a>
+      <a href="misiones.html" class="project">
+        <img src="/img/misiones-flayer.png" alt="Misiones">
+        <div class="project-content">
+          <h2>Misiones</h2>
+          <p>Proyectos de ayuda y evangelización en diferentes comunidades.</p>
+        </div>
+      </a>
+      <a href="capacitacion.html" class="project">
+        <img src="/img/capacitacion maestras.png" alt="Capacitación de Profesores">
+        <div class="project-content">
+          <h2>Capacitación de Maestros</h2>
+          <p>Formación continua para educadores y líderes.</p>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+
+  <footer id="hswfooter" class="hillsong-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/HijosDePastoresRH" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025103/002-facebook-blkbg.png"
+              alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/hijosdeministros/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025102/001-instagram-blkbg.png"
+              alt="Instagram">
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025104/003-twitter-blkbg.png"
+              alt="Twitter">
+          </a>
+
+          <a href="https://www.tiktok.com/@hdmayacucho?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025109/016-tik-tok-blkbg.png"
+              alt="TikTok">
+          </a>
+          <a href="https://www.youtube.com/@HDMAyacucho" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025106/007-youtube-blkbg.png"
+              alt="YouTube">
+          </a>
+
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3>Contactos </h3>
+        <p>Email: ministerioconproposito@gmail.com</p>
+        <p>Teléfono: 913882945</p>
+        <p>Ayacucho-Huamanga</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 HDM - Región huamanga. Todos los derechos reservados.</p>
+      <p>Diseñado por <a href="https://www.facebook.com/percy.condenunez.7">Percy Conde</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function handleScroll() {
+      const projects = document.querySelectorAll('.project');
+      projects.forEach(project => {
+        if (isElementInViewport(project)) {
+          project.style.transform = 'scale(1.05)';
+        } else {
+          project.style.transform = 'scale(1)';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+</body>
+</html>

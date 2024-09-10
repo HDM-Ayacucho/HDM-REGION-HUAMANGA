@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #694816;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    font-family:cursive;
+    margin-left: 2rem;
+    
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #835d16;
+   
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: #cc9659;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según necesites */
+    z-index: 1;
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 5%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-container img {
+  max-width: 50%;
+  height: auto;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 8rem; /* Esto añade espacio entre cada section-content */
+}
+
+
+
+.video-container {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 1rem; /* Espacio entre el video y el título */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.graffiti-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 10px 10px;
+  background-color: #242323;
+  color: rgb(197, 197, 197);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #254625;
+  color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+  transform: translateY(-2px);
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .section {
+      padding: 2rem 5%;
+  }
+
+  .title-container img {
+      max-width: 90%;
+  }
+
+  .section-content {
+      padding-top: 10%;
+      margin-bottom: 3rem;
+  }
+
+  .video-container {
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+      padding: 1rem 5%;
+  }
+
+  .title-container img {
+      max-width: 100%;
+  }
+
+  .btn {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
+.seccion-nosotros {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-nosotros h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.descripcion {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mision-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mision, .vision {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.mision.visible, .vision.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mision h3, .vision h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mision p, .vision p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Estilos para tablets y dispositivos más grandes */
+@media screen and (min-width: 768px) {
+    .mision-vision {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mision, .vision {
+        width: 45%;
+    }
+
+    .mision {
+        transform: translateX(-20px);
+    }
+
+    .vision {
+        transform: translateX(20px);
+    }
+
+    .mision.visible, .vision.visible {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1024px) {
+    .seccion-nosotros h2 {
+        font-size: 2.5rem;
+    }
+
+    .descripcion {
+        font-size: 1.1rem;
+    }
+
+    .mision h3, .vision h3 {
+        font-size: 1.8rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+    }
+}
+
+.section1 {
+    background-image: url('/img/negroinquebrantables.jpg');
+}
+
+.section2 {
+    background-image: url('/img/noche.JPG');
+}
+
+.section-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f09e23;
+    max-width: 900px;
+    width: 100%;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=BlowBrush&display=swap');
+
+.graffiti-title {
+    font-family: 'BlowBrush', cursive;
+    font-size: 1rem; /* Tamaño grande para mayor impacto */
+    color: #e4e4e4; /* Color sólido negro */
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px; /* Espaciado entre letras para un toque artístico */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+    .graffiti-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .graffiti-title {
+        font-size: 1rem;
+    }
+}
+
+.seccion-compra {
+    background-image: url('/img/inicio-tienda.JPG');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: rgb(255, 208, 0);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .texto-central {
+    text-align: center;
+  }
+  
+  .contenido h2 {
+    font-size: 7.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .contenido p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  
+  .boton-comprar {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .boton-comprar:hover {
+    background-color: #4d4a4a;
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .seccion-compra {
+      min-height: 500px;
+    }
+  
+    .contenido {
+      flex-direction: column;
+    }
+  
+    .contenido h2 {
+      font-size: 7.5rem;
+    }
+  
+    .contenido p {
+      font-size: 3rem;
+    }
+  
+    .boton-comprar {
+
+      position: static;
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      transform: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .seccion-compra {
+      min-height: 400px;
+    }
+  
+    .contenido h2 {
+      font-size: 7.5rem;
+    }
+  
+    .contenido p {
+      font-size: 0.9rem;
+    }
+  
+    .boton-comprar {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+
+  .hillsong-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.7;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-right h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-left, .footer-right {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  .whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 1, 1.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
