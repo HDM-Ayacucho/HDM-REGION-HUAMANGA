@@ -327,7 +327,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=BlowBrush&display=swap');
 
 .graffiti-title {
-    font-family: 'BlowBrush', cursive;
+    
     font-size: 1rem; /* Tamaño grande para mayor impacto */
     color: #e4e4e4; /* Color sólido negro */
     margin-bottom: 1.5rem;
