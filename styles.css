@@ -35,7 +35,7 @@ body {
 
 .nav-links li {
     font-family:cursive;
-    margin-left: 4rem;
+    margin-left: 2rem;
     
 }
 
@@ -327,7 +327,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=BlowBrush&display=swap');
 
 .graffiti-title {
-    
+    font-family: 'BlowBrush', cursive;
     font-size: 1rem; /* Tamaño grande para mayor impacto */
     color: #e4e4e4; /* Color sólido negro */
     margin-bottom: 1.5rem;
@@ -386,6 +386,69 @@ body {
         font-size: 1rem;
     }
 }
+
+.projects-container {
+  max-width: 1500px;
+  margin: 0.1rem auto;
+  padding: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  
+  
+ 
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.0rem;
+}
+.project {
+  background-color: #9b9494;
+  border-radius: 1px;
+  box-shadow: 0 8px 16px rgba(32, 31, 31, 0.932);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  
+
+}
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+.project img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.project:hover img {
+  transform: scale(1.2);
+}
+.project-content {
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.project:hover .project-content {
+  transform: translateY(0);
+}
+.project h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.project p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
 
 .seccion-compra {
     background-image: url('/img/inicio-tienda.JPG');
