@@ -26,13 +26,13 @@
   }
   
   .hero-content h1 {
-    font-size: 4rem; /* Ajusta según tus preferencias */
-    margin-bottom: 4.5rem;
+    font-size: 5rem; /* Ajusta según tus preferencias */
+    margin-bottom: 8.5rem;
 
   }
   
   .hero-content p {
-    font-size: 2.5rem; /* Ajusta según tus preferencias */
+    font-size: 5.5rem; /* Ajusta según tus preferencias */
     color: aqua;
   }
   
@@ -46,10 +46,10 @@
 
 .productos h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
     color: #d9e6f3;
-    font-family: cursive;
+    font-family: 'Team Night', serif;
 }
 
 .producto-grid {
@@ -85,6 +85,7 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     color: #ffffff;
+    
 }
 
 .producto p {
@@ -150,7 +151,7 @@
 }
 
 .filtro-btn:hover, .filtro-btn.activo {
-    background-color: #104942;
+    background-color: #837046;
 }
 
 .carrito-ventana {
@@ -230,7 +231,7 @@
     }
 
     .productos h2 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .producto-grid {
@@ -263,7 +264,7 @@
 
 @media (max-width: 480px) {
     .productos h2 {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
 
     .producto-grid {
@@ -271,12 +272,12 @@
     }
 
     .filtros {
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
     }
 
     .filtro-btn {
-        width: 80%;
-        margin: 5px 0;
+        width: 30%;
+        margin: 5px 5PX;
     }
 }
