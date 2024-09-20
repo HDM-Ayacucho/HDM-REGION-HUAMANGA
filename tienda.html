@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hijos de Ministros</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="/img/icotitulo.ico" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap"  
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link   href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="tienda.css">
 </head>
@@ -15,21 +20,26 @@
 <body>
 
 
-  <nav class="navbar">
-    <div class="logo">
-      <img src="/img/logo (2).svg" alt="HDM" height="40">
-      <img src="/img/LG-asambleas.png" alt="HDM" height="40">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="/img/logo (2).ico" alt="HDM" height="40">
+          <img src="/img/Logo-asambleas.png" alt="HDM" height="40">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">INICIO</a>
+          <a href="oracion.html">ORACIÓN</a>
+          <a href="eventos.html">EVENTOS</a>
+        </div>
+      </nav>
     </div>
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="eventos.html">Eventos</a></li>
-      <li><a href="oracion.html">Oración</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-    </ul>
-    <div class="menu-toggle" id="mobile-menu">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
+  </header>
+
 
   <header class="heroTienda">
     <div class="hero-image">
@@ -41,33 +51,33 @@
     </div>
   </header>
 
-  
+
 
   <section class="productos">
-    <h2>Nuestros Productos</h2>
+    <h2>PRODUCTOS</h2>
     <div class="filtros">
-        <button class="filtro-btn" data-categoria="todos">Todos</button>
-        <button class="filtro-btn" data-categoria="polos">Polos</button>
-        <button class="filtro-btn" data-categoria="poleras">Poleras</button>
-        <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
+      <button class="filtro-btn" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="polos">Polos</button>
+      <button class="filtro-btn" data-categoria="poleras">Poleras</button>
+      <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
     </div>
     <div class="producto-grid" id="producto-grid">
-        <!-- Los productos se cargarán aquí dinámicamente -->
+      <!-- Los productos se cargarán aquí dinámicamente -->
     </div>
-</section>
+  </section>
 
-<div id="carrito">
-    <i class="fas fa-shopping-cart"></i>  
+  <div id="carrito">
+    <i class="fas fa-shopping-cart"></i>
     <span id="carrito-cantidad">0</span>
-</div>
+  </div>
 
-<div id="carrito-ventana" class="carrito-ventana">
+  <div id="carrito-ventana" class="carrito-ventana">
     <button class="cerrar-carrito"><i class="fas fa-times"></i></button>
     <h3>Carrito de Compras</h3>
     <ul id="carrito-lista"></ul>
     <div id="carrito-total"></div>
     <button id="comprar-btn">Comprar por WhatsApp</button>
-</div>
+  </div>
 
 
 
@@ -91,7 +101,8 @@
               alt="Twitter">
           </a>
 
-          <a href="https://www.tiktok.com/@hdmayacucho?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@hdmayacucho?is_from_webapp=1&sender_device=pc" target="_blank"
+            rel="noopener noreferrer">
             <img
               src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025109/016-tik-tok-blkbg.png"
               alt="TikTok">
@@ -112,14 +123,24 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 HDM - Región huamanga. Todos los derechos reservados.</p>
-      <p>Diseñado por <a href="https://www.facebook.com/percy.condenunez.7">Percy Conde</a></p>
+      <p>&copy; 2024 HDM. Todos los derechos reservados.</p>
+      <p>Diseñado por
+        <a href="https://www.facebook.com/percy.condenunez.7">
+          <font color="red">Percy Conde</font>
+        </a>
+        <a href="https://github.com/percyby2000" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
+            width="20" height="20" style="vertical-align: middle;">
+        </a>
+      </p>
+      <br>
+      <br>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="tienda.js"></script>
-<script src="script.js"></script>
+  <script src="tienda.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
