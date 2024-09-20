@@ -1,25 +1,29 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
   
   .events {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 90px;
+    padding: 20px;
 }
 .events h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    padding:Top 50px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    padding:Top 0px;
+    margin-top: 100px;
+    font-family: 'Team Night', serif;
+    font-size: 4rem;
 }
 .events-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 5%;
 }
 .event-card {
     background: #fff;
@@ -41,7 +45,9 @@ body {
 }
 .event-details h3 {
     margin: 0 0 15px;
-    color: #2c3e50;
+    color: #000000;
+    font-family: 'Team Night', serif;
+    font-size: 3rem;
 }
 .event-info {
     margin-bottom: 10px;
@@ -91,11 +97,15 @@ body {
   @media (max-width: 768px) {
     .events {
       padding:20px;
-      margin-top:80px ;
+      margin-top:0px ;
     }
   
     .events-container {
       grid-template-columns: 1fr;
+      margin-top: 20%;
+    }
+    .events h2 {
+      margin-top: 90px;
     }
   
     .event-image img {
