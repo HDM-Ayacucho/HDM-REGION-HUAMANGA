@@ -1,7 +1,7 @@
 .heroTienda {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ajusta esto según tus necesidades */
+    height: 100vh; 
     overflow: hidden;
   }
   
@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/hero\ tienda.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('/img/hero\ tienda.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,13 +26,13 @@
   }
   
   .hero-content h1 {
-    font-size: 5rem; /* Ajusta según tus preferencias */
+    font-size: 5rem; 
     margin-bottom: 8.5rem;
 
   }
   
   .hero-content p {
-    font-size: 5.5rem; /* Ajusta según tus preferencias */
+    font-size: 5.5rem; 
     color: aqua;
   }
   
@@ -42,13 +42,14 @@
     padding: 4rem 2rem;
     max-width: 1500px;
     margin: 0 auto;
+    background-color: rgb(209, 205, 205);
 }
 
 .productos h2 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
-    color: #d9e6f3;
+    color: #070707;
     font-family: 'Team Night', serif;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .producto {
-    background-color: #111111;
+    background-color: #f3f3f3;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -84,17 +85,17 @@
 .producto h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
-    color: #ffffff;
+    color: #0a0a0a;
     
 }
 
 .producto p {
     font-size: 1.2rem;
-    color: #b9b9b9;
+    color: #040313;
 }
 
 .producto button {
-    background-color: #070707;
+    background-color: #071a27;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -105,7 +106,7 @@
 }
 
 .producto button:hover {
-    background-color: #104942;
+    background-color: #6d6b61;
 }
 
 #carrito {
@@ -113,7 +114,7 @@
     bottom: 20px;
     right: 20px;
     background-color: #1d666b;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 50%;
     cursor: pointer;
@@ -125,8 +126,8 @@
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: red;
-    color: white;
+    background-color: rgb(60, 255, 0);
+    color: rgb(0, 0, 0);
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 14px;
@@ -140,8 +141,8 @@
 }
 
 .filtro-btn {
-    background-color: #1d666b;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(66, 66, 66);
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -151,7 +152,7 @@
 }
 
 .filtro-btn:hover, .filtro-btn.activo {
-    background-color: #837046;
+    background-color: #000000;
 }
 
 .carrito-ventana {
@@ -159,9 +160,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #395055;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 1px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     z-index: 1001;
     display: none;
@@ -172,18 +173,24 @@
 
 .carrito-ventana h3 {
     margin-top: 0;
+    margin-bottom: 20px;
+    color: black;
 }
 
 #carrito-lista {
     list-style-type: none;
     padding: 0;
+    
 }
 
 #carrito-lista li {
     display: flex;
-    align-items: center;
+    align-items:end;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    padding-right: 15px;
+    
 }
 
 #carrito-lista img {
@@ -198,11 +205,12 @@
     border: none;
     cursor: pointer;
     font-size: 16px;
+    color: #000000;
 }
 
 #comprar-btn {
-    background-color: #1d666b;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -211,20 +219,26 @@
 }
 
 #comprar-btn:hover {
-    background-color: #104942;
+    background-color: #1eff00; 
 }
 
-.cerrar-carrito {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+button {
+    background-color: #060707; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
 }
 
-/* Media queries para dispositivos móviles */
+
+button:hover {
+    background-color: #176a8b;
+}
+
+
+
 @media (max-width: 768px) {
     .productos {
         padding: 2rem 1rem;
