@@ -1,8 +1,7 @@
+//AGREGAR PRODUCTOS A LA TIENDA
+
 const productos = [
-    { id: 1, nombre: 'Polo verde', precio: 25.00, imagen: '/tienda/verde.png', categoria: 'polos' },
-    { id: 2, nombre: 'Polo amarilla', precio: 35.00, imagen: '/tienda/amarillo.png', categoria: 'polos' },
-    { id: 3, nombre: 'Polo roja', precio: 35.00, imagen: '/tienda/rojo.png', categoria: 'polos' },
-    { id: 4, nombre: 'Polo azul', precio: 35.00, imagen: '/tienda/azul.png', categoria: 'polos' },
+    
     { id: 5, nombre: 'Polera azul', precio: 35.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
     { id: 6, nombre: 'Polera roja', precio: 35.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
     { id: 7, nombre: 'Polera verde', precio: 35.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
@@ -14,7 +13,7 @@ const productos = [
     { id: 13, nombre: 'pulsera jesus love', precio: 15.00, imagen: '/tienda/pulseralovejesus.webp', categoria: 'accesorios' },
     { id: 14, nombre: 'pulsera jesus', precio: 15.00, imagen: '/tienda/pulserJesus.webp', categoria: 'accesorios' },
 ];
-
+//FUNCIONES-...............
 const productoGrid = document.getElementById('producto-grid');
 const carritoIcono = document.getElementById('carrito');
 const carritoCantidad = document.getElementById('carrito-cantidad');
@@ -25,6 +24,7 @@ const comprarBtn = document.getElementById('comprar-btn');
 const filtrosBtns = document.querySelectorAll('.filtro-btn');
 
 let carrito = [];
+//RENDERIZAR PRODUCTOS A LA TIENDA
 
 function renderizarProductos(productos) {
     productoGrid.innerHTML = '';
@@ -34,12 +34,8 @@ function renderizarProductos(productos) {
         productoElement.innerHTML = `
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
-            <p>$${producto.precio.toFixed(2)}</p>
-            <div class="producto-zoom">
-                <a href="${producto.imagen}" data-fancybox="gallery" data-caption="${producto.nombre}">
-                    <i class="fas fa-search-plus"></i>
-                </a>
-            </div>
+            <p>S/${producto.precio.toFixed(2)}</p>
+            
             <button onclick="agregarAlCarrito(${producto.id})">Añadir al carrito</button>
         `;
         productoGrid.appendChild(productoElement);
@@ -108,7 +104,7 @@ function actualizarCarrito() {
             <img src="${item.imagen}" alt="${item.nombre}">
             <div class="item-info">
                 <div class="item-name">${item.nombre}</div>
-                <div class="item-price">$${(item.precio * item.cantidad).toFixed(2)}</div>
+                <div class="item-price">s/${(item.precio * item.cantidad).toFixed(2)}</div>
             </div>
             <div class="item-quantity">
                 <button class="quantity-btn" onclick="cambiarCantidad(${item.id}, -1)"><i class="fas fa-minus"></i></button>
@@ -120,22 +116,16 @@ function actualizarCarrito() {
         carritoLista.appendChild(li);
         total += item.precio * item.cantidad;
     });
-    carritoTotal.textContent = `Total: $${total.toFixed(2)}`;
+    carritoTotal.textContent = `Total: s/.${total.toFixed(2)}`;
 }
 
 function comprarPorWhatsApp() {
     const mensaje = carrito.map(item => `${item.nombre} x${item.cantidad} - S/${(item.precio * item.cantidad).toFixed(2)}`).join('\n');
     const total = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
-    const telefono = '910109478'; // Reemplaza con tu número de WhatsApp
+    const telefono = '910109478'; 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent('Quiero comprar:\n' + mensaje + '\n\nTotal: S/' + total.toFixed(2))}`;
     window.open(url, '_blank');
 }
-
-carritoIcono.addEventListener('click', () => {
-    carritoVentana.style.display = 'block';
-});
-
-// Agregar botón para cerrar la ventana del carrito
 const cerrarCarritoBtn = document.createElement('button');
 cerrarCarritoBtn.innerHTML = '<i class="fas fa-times"></i>';
 cerrarCarritoBtn.classList.add('cerrar-carrito');
@@ -159,9 +149,16 @@ filtrosBtns.forEach(btn => {
 });
 
 
+carritoIcono.addEventListener('click', () => {
+    carritoVentana.style.display = 'block';
+});
+
+
+
+
 renderizarProductos(productos);
 
-// Inicializar Fancybox
+
 Fancybox.bind("[data-fancybox]", {
-    // Opciones de Fancybox aquí
+
 });
