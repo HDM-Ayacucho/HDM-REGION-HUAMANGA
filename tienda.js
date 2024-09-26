@@ -122,7 +122,7 @@ function actualizarCarrito() {
 function comprarPorWhatsApp() {
     const mensaje = carrito.map(item => `${item.nombre} x${item.cantidad} - S/${(item.precio * item.cantidad).toFixed(2)}`).join('\n');
     const total = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
-    const telefono = '910109478'; 
+    const telefono = '+51910109478'; 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent('Quiero comprar:\n' + mensaje + '\n\nTotal: S/' + total.toFixed(2))}`;
     window.open(url, '_blank');
 }
