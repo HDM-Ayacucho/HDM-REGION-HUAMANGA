@@ -3,34 +3,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    background-color: white;
   }
   
   .events {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #ffffff;
 }
 .events h2 {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 0px;
     padding:Top 0px;
     margin-top: 100px;
     font-family: 'Team Night', serif;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .events-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 5%;
+    box-shadow: #000000;
 }
 .event-card {
-    background: #fff;
-    border-radius: 10px;
+    background: #f0eeee;
+    border-radius: 3px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 .event-card:hover {
     transform: translateY(-5px);
