@@ -1,12 +1,12 @@
 //AGREGAR PRODUCTOS A LA TIENDA
 
 const productos = [
-    { id: 1, nombre: 'Historias Biblicas TOMO 1', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 2, nombre: 'Historias Biblicas TOMO 2', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 3, nombre: 'Historias Biblicas TOMO 3', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 4, nombre: 'Historias Biblicas TOMO 4', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 5, nombre: 'Historias Biblicas TOMO 5', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 6, nombre: 'Historias Biblicas TOMO 6', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 1, nombre: 'Historias Bíblicas TOMO 1', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 2, nombre: 'Historias Bíblicas TOMO 2', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 3, nombre: 'Historias Bíblicas TOMO 3', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 4, nombre: 'Historias Bíblicas TOMO 4', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 5, nombre: 'Historias Bíblicas TOMO 5', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 6, nombre: 'Historias Bíblicas TOMO 6', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
     { id: 7, nombre: 'Polera azul', precio: 35.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
     { id: 8, nombre: 'Polera roja', precio: 35.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
     { id: 9, nombre: 'Polera verde', precio: 35.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
