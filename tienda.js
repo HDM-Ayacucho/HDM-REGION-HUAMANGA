@@ -1,17 +1,22 @@
 //AGREGAR PRODUCTOS A LA TIENDA
 
 const productos = [
-    
-    { id: 5, nombre: 'Polera azul', precio: 35.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
-    { id: 6, nombre: 'Polera roja', precio: 35.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
-    { id: 7, nombre: 'Polera verde', precio: 35.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
-    { id: 8, nombre: 'Polera amarilla', precio: 35.00, imagen: '/tienda/polera4.png', categoria: 'poleras' },
-    { id: 9, nombre: 'Gorra cruz ploma', precio: 45.00, imagen: '/tienda/gorra1.jpg', categoria: 'accesorios' },
-    { id: 10, nombre: 'Gorra cruz banca', precio: 43.00, imagen: '/tienda/gorra2.jpg', categoria: 'accesorios' },
-    { id: 11, nombre: 'Gorra azul roja', precio: 27.00, imagen: '/tienda/gorra3.jpg', categoria: 'accesorios' },
-    { id: 12, nombre: 'Gorra chuyo plaa', precio: 15.00, imagen: '/tienda/gorra4.jpg', categoria: 'accesorios' },
-    { id: 13, nombre: 'pulsera jesus love', precio: 15.00, imagen: '/tienda/pulseralovejesus.webp', categoria: 'accesorios' },
-    { id: 14, nombre: 'pulsera jesus', precio: 15.00, imagen: '/tienda/pulserJesus.webp', categoria: 'accesorios' },
+    { id: 1, nombre: 'Historias Biblicas TOMO 1', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 2, nombre: 'Historias Biblicas TOMO 2', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 3, nombre: 'Historias Biblicas TOMO 3', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 4, nombre: 'Historias Biblicas TOMO 4', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 5, nombre: 'Historias Biblicas TOMO 5', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 6, nombre: 'Historias Biblicas TOMO 6', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 7, nombre: 'Polera azul', precio: 35.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
+    { id: 8, nombre: 'Polera roja', precio: 35.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
+    { id: 9, nombre: 'Polera verde', precio: 35.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
+    { id: 10, nombre: 'Polera amarilla', precio: 35.00, imagen: '/tienda/polera4.png', categoria: 'poleras' },
+    { id: 11, nombre: 'Gorra cruz ploma', precio: 45.00, imagen: '/tienda/gorra1.jpg', categoria: 'accesorios' },
+    { id: 12, nombre: 'Gorra cruz blanca', precio: 43.00, imagen: '/tienda/gorra2.jpg', categoria: 'accesorios' },
+    { id: 13, nombre: 'Gorra azul roja', precio: 27.00, imagen: '/tienda/gorra3.jpg', categoria: 'accesorios' },
+    { id: 14, nombre: 'Gorra chuyo plaa', precio: 15.00, imagen: '/tienda/gorra4.jpg', categoria: 'accesorios' },
+    { id: 15, nombre: 'pulsera jesus love', precio: 15.00, imagen: '/tienda/pulseralovejesus.webp', categoria: 'accesorios' },
+    { id: 16, nombre: 'pulsera jesus', precio: 15.00, imagen: '/tienda/pulserJesus.webp', categoria: 'accesorios' },
 ];
 //FUNCIONES-...............
 const productoGrid = document.getElementById('producto-grid');
