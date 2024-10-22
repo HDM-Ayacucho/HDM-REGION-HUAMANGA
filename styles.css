@@ -317,60 +317,66 @@ nav {
 
 
 .seccion-nosotros {
-    background-color: white;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Team Night', serif;
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Team Night', serif;
 }
 
 .seccion-nosotros h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 4rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 4rem;
 }
 
 .descripcion {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto 30px;
   color: #000000;
   font-size: 1rem;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
 }
+
 .mision-vision {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .mision, .vision {
-    width: 100%;
-    padding: 15px;
-    background-color: #5c533b;
-    color: var(--bg-color);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s, transform 0.8s;
+  width: 100%;
+  padding: 20px;
+  background-color: #cac9c8;
+  color: var(--bg-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s, transform 0.8s;
+  box-sizing: border-box;
 }
 
 .mision.visible, .vision.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mision h3, .vision h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .mision p, .vision p {
   font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 /* Estilos para tablets y dispositivos más grandes */
