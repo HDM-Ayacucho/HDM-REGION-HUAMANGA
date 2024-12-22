@@ -15,6 +15,7 @@
   <link   href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="eventos.css">
+
 </head>
 
 <body>
@@ -24,9 +25,9 @@
   <header>
     <div class="container">
       <nav>
-        <div class="logo">
-          <img src="/img/logo (2).ico" alt="HDM" height="40">
-          <img src="/img/Logo-asambleas.png" alt="HDM" height="40">
+        <div class="logo" onclick="window.location.href='index.html'">
+          <img class="first-logo" src="/img/logo (2).ico" alt="HDM" height="40">
+          <img class="second-logo" src="/img/Logo-asambleas.png" alt="HDM" height="40">
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
@@ -42,32 +43,128 @@
     </div>
   </header>
 
-  <section class="events">
-    <h2>Próximos Eventos</h2>
-    <div class="events-container">
-      <div class="event-card" data-event-id="1">
-        <div class="event-image">
-          <img src="/img/unoencristo.png" alt="Campamento Uno en Cristo">
+  <section id="hero" class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 data-aos="fade-up">
+        UNO EN CRISTO
+      </h1>
+      <div class="conference-info" data-aos="fade-up" data-aos-delay="200">
+        <h2>CONFERENCIA</h2>
+      </div>
+      <a href="https://8gxq22l8.forms.app/formulario-de-reserva-de-conferencias" target="_blank">
+        <button class="cta-button" data-aos="fade-up" data-aos-delay="400">
+          Obtener entradas
+        </button>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- Sección Expositores -->
+  <section id="speakers" class="speakers-section">
+    <h2 data-aos="fade-up">PONENTES</h2>
+    <div class="speakers-grid">
+      <div class="speaker-card" data-aos="fade-up">
+        <img src="somosuno/rebeca.jpg" alt="Expositor">
+        <div class="speaker-info">
+          <h3>Rebecca Blesch</h3>
+          <p></p>
         </div>
-        <div class="event-details">
-          <h3>Conferencia</h3>
-          <p class="event-info"><i class="fas fa-calendar-alt"></i> 13 - 16 de febrero de 2025</p>
-          <p class="event-info"><i class="fas fa-clock"></i> 2:00 PM </p>
-          <p class="event-info"><i class="fas fa-map-marker-alt"></i> "Colegio apostol pablo"</p>
-          <p class="event-description">Dirigido a niños y adolecentes, tres dias  de talleres y misiones.</p>
-          <p class="event-price">Desde S/. 100.00 </p>
-          <p class="tickets-left">Cupos disponibles: <span class="ticket-count"> + 200</span></p>
-          <button formsappId="66e1b63a1e64fdd5711c2e59"></button>
-          <script src="https://forms.app/static/embed.js" type="text/javascript" async defer
-            onload="new formsapp('66e1b63a1e64fdd5711c2e59', 'slider', {'overlay':'rgba(5,3,127,0.5)','button':{'color':'#6D1BB7','text':'INSCRIBIRME'},'width':'767px','height':'100vh','align':'right'});"></script>
+      </div>
+      <div class="speaker-card" data-aos="fade-up">
+        <img src="somosuno/alexxander.jpg" alt="Expositor">
+        <div class="speaker-info">
+          <h3>Alexander Rodriguez</h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="speaker-card" data-aos="fade-up">
+        <img src="somosuno/gianella.jpg" alt="Expositor">
+        <div class="speaker-info">
+          <h3>GuianNella Días</h3>
+          <p></p>
+        </div>
+      </div>
+      <!-- Repetir para otros expositores -->
+    </div>
+  </section>
+
+  <!-- Sección Actividades -->
+  <section id="activities" class="activities-section">
+    <h2 data-aos="fade-up">TALLERES * ALABANZAS * MISIONES *</h2>
+    <!--<div class="activities-grid">
+          <div class="activity-card" data-aos="fade-up">
+              <span class="activity-number">Dia #1</span>
+              <h3>TALLERES</h3>
+              <p>Descripción del taller. ¡Únete a nosotros para explorar juntos el arte en Cristo!</p>
+          </div>
+          <!-- Repetir para otros talleres -->
+    </div>
+  </section>
+
+  <!-- Sección Cronograma -->
+  <section id="schedule" class="schedule-section">
+    <h2 data-aos="fade-up">CRONOGRAMA</h2>
+    <div class="schedule-container" data-aos="fade-up">
+      <div class="schedule-item">
+        <div class="event-info">
+          <h3>Descárgalo aquí</h3>
+          <a href="ruta-del-archivo.pdf" download class="download-link">
+            <button class="download-button">
+              <span class="icon">&#128229;</span>
+              Descargar PDF
+            </button>
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <script src="evento.js"></script>
 
 
+  <section id="location" class="location-section">
+    <div class="location-container">
+      <div class="location-info" data-aos="fade-right">
+        <h2>Ubicación</h2>
+        <div class="location-details">
+          <div class="location-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Colegio Apóstol Pablo</p>
+          </div>
+          <div class="location-item">
+            <i class="fas fa-clock"></i>
+            <p>Horario: 9:00 AM - 6:00 PM</p>
+          </div>
+          <div class="location-item">
+            <i class="fas fa-phone"></i>
+            <p>Contacto: +51 918 862 125</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container" data-aos="fade-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.023418562719!2d-74.21716702506782!3d-13.16523216373266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9112873acf2ec1ff%3A0xd8b417ae14cba883!2sColegio%20Ap%C3%B3stol%20Pablo!5e1!3m2!1ses-419!2spe!4v1734879576668!5m2!1ses-419!2spe"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sección Contacto -->
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <h2 data-aos="fade-up">ÚNETE A NUESTRA COMUNIDAD DE VOLUNTARIADO</h2>
+      <form class="contact-form" data-aos="fade-up">
+
+        <a href="https://8gxq22l8.forms.app/formulario-de-acuerdo-de-voluntariado-hdm" target="_blank">
+          <button type="button">DA EL PRIMER PASO</button>
+        </a>
+
+      </form>
+    </div>
+  </section>
 
 
 
@@ -113,16 +210,28 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 HDM - Región huamanga. Todos los derechos reservados.</p>
-      <p>Diseñado por <a href="https://www.facebook.com/percy.condenunez.7">Percy Conde</a></p>
+      <p>&copy; 2024 HDM. Todos los derechos reservados.</p>
+      <p>Diseñado por
+        <a href="https://www.facebook.com/percy.condenunez.7">
+          <font color="red">Percy Conde</font>
+        </a>
+        <a href="https://github.com/percyby2000" target="_blank" style="display: inline-block; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
+            style="width: 16px; height: 16px; vertical-align: middle;">
+        </a>
+      </p>
       <br>
       <br>
     </div>
   </footer>
+  <script>
+
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="tienda.js"></script>
   <script src="script.js"></script>
+  <script src="evento.js"></script>
 
 
 </body>
