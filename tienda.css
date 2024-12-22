@@ -1,43 +1,43 @@
 .heroTienda {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     overflow: hidden;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/hero\ tienda.jpg'); 
+    background-image: url('/img/hero\ tienda.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     position: relative;
     z-index: 1;
     text-align: center;
     padding: 60px;
-    
-  }
-  
-  .hero-content h1 {
-    font-size: 5rem; 
+
+}
+
+.hero-content h1 {
+    font-size: 5rem;
     margin-bottom: 8.5rem;
 
-  }
-  
-  .hero-content p {
-    font-size: 5.5rem; 
-    color: aqua;
-  }
-  
+}
 
-  .productos {
+.hero-content p {
+    font-size: 5.5rem;
+    color: aqua;
+}
+
+
+.productos {
     background-color: #0f0f0f;
     padding: 4rem 2rem;
     max-width: 1500px;
@@ -86,7 +86,7 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     color: #0a0a0a;
-    
+
 }
 
 .producto p {
@@ -95,7 +95,7 @@
 }
 
 .producto button {
-    background-color: #071a27;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -106,14 +106,14 @@
 }
 
 .producto button:hover {
-    background-color: #6d6b61;
+    background-color: #343319;
 }
 
 #carrito {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #1d666b;
+    background-color: #ff9d00;
     color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 50%;
@@ -126,7 +126,7 @@
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: rgb(60, 255, 0);
+    background-color: rgb(229, 255, 0);
     color: rgb(0, 0, 0);
     border-radius: 50%;
     padding: 5px 10px;
@@ -142,7 +142,7 @@
 
 .filtro-btn {
     background-color: #ffffff;
-    color: rgb(66, 66, 66);
+    color: rgb(158, 137, 18);
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -151,7 +151,8 @@
     transition: background-color 0.3s ease;
 }
 
-.filtro-btn:hover, .filtro-btn.activo {
+.filtro-btn:hover,
+.filtro-btn.activo {
     background-color: #000000;
 }
 
@@ -160,10 +161,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #395055;
+    background-color: #9f9f9f;
     padding: 20px;
     border-radius: 1px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1001;
     display: none;
     max-width: 80%;
@@ -180,17 +181,17 @@
 #carrito-lista {
     list-style-type: none;
     padding: 0;
-    
+
 }
 
 #carrito-lista li {
     display: flex;
-    align-items:end;
+    align-items: end;
     justify-content: space-between;
     margin-bottom: 40px;
     color: #ffffff;
     padding-right: 15px;
-    
+
 }
 
 #carrito-lista img {
@@ -219,22 +220,22 @@
 }
 
 #comprar-btn:hover {
-    background-color: #1eff00; 
+    background-color: #858114;
 }
 
 button {
-    background-color: #060707; 
+    background-color: #060707;
     color: white;
-    border: none; 
-    border-radius: 5px; 
-    padding: 5px 10px; 
-    cursor: pointer; 
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 
 button:hover {
-    background-color: #176a8b;
+    background-color: #2c2230;
 }
 
 
@@ -286,7 +287,7 @@ button:hover {
     }
 
     .filtros {
-        flex-direction:row;
+        flex-direction: row;
         align-items: center;
     }
 
