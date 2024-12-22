@@ -441,11 +441,25 @@ section {
 
 /* Contact Section */
 .contact-section {
-    background-color: var(--color-black);
+    position: relative;
     color: var(--color-white);
     text-align: center;
-    position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del fondo */
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(somosuno/3.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Ajusta la opacidad aquí */
+    z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
 }
 
 .contact-content {
@@ -458,14 +472,6 @@ section {
     margin-top: 3rem;
 }
 
-.contact-form input {
-    width: 100%;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    border-radius: 0px;
-    font-size: 1.1rem;
-}
 
 .contact-form button {
     width: 100%;
