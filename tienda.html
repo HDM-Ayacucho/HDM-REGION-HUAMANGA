@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hijos de Ministros</title>
-    <link rel="icon" href="/img/icotitulo.ico" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap"   
- rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijos de Ministros</title>
+  <link rel="icon" href="/img/icotitulo.ico" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap"  
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link   
- href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="tienda.css">
+  <link   href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tienda.css">
 </head>
+
 <body>
 
 
   <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="/img/logo (2).ico" alt="HDM" height="40">
-                    <img src="/img/Logo-asambleas.png" alt="HDM" height="40">
-                  </div>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-                <div class="nav-links">
-                    <a href="index.html">INICIO</a>
-                    <a href="oracion.html">ORACIÓN</a>
-                    <a href="eventos.html">EVENTOS</a>
-                </div>
-            </nav>
+    <div class="container">
+      <nav>
+        <div class="logo" onclick="window.location.href='index.html'">
+          <img class="first-logo" src="/img/logo (2).ico" alt="HDM" height="40">
+          <img class="second-logo" src="/img/Logo-asambleas.png" alt="HDM" height="40">
         </div>
-    </header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">INICIO</a>
+          <a href="oracion.html">ORACIÓN</a>
+          <a href="eventos.html">EVENTOS</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
 
   <header class="heroTienda">
@@ -50,93 +51,95 @@
     </div>
   </header>
 
-  
+
 
   <section class="productos">
     <h2>PRODUCTOS</h2>
     <div class="filtros">
-        <button class="filtro-btn" data-categoria="todos">Todos</button>
-        <button class="filtro-btn" data-categoria="poleras">Poleras</button>
-        <button class="filtro-btn" data-categoria="materiales">Materiales</button>
-        <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
+      <button class="filtro-btn" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="poleras">Poleras</button>
+      <button class="filtro-btn" data-categoria="materiales">Materiales</button>
+      <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
     </div>
     <div class="producto-grid" id="producto-grid">
-        <!-- Los productos se cargarán aquí dinámicamente -->
+      <!-- Los productos se cargarán aquí dinámicamente -->
     </div>
-</section>
+  </section>
 
-<div id="carrito">
-    <i class="fas fa-shopping-cart"></i>  
+  <div id="carrito">
+    <i class="fas fa-shopping-cart"></i>
     <span id="carrito-cantidad">0</span>
-</div>
+  </div>
 
-<div id="carrito-ventana" class="carrito-ventana">
+  <div id="carrito-ventana" class="carrito-ventana">
     <h3>Carrito de Compras</h3>
     <ul id="carrito-lista"></ul>
     <div id="carrito-total"></div>
     <button id="comprar-btn">Comprar por WhatsApp</button>
-</div>
+  </div>
 
 
 
-<footer id="hswfooter" class="hillsong-footer">
-  <div class="footer-content">
-    <div class="footer-left">
-      <div class="social-icons">
-        <a href="https://www.facebook.com/HijosDePastoresRH" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025103/002-facebook-blkbg.png"
-            alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/hijosdeministros/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025102/001-instagram-blkbg.png"
-            alt="Instagram">
-        </a>
-        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025104/003-twitter-blkbg.png"
-            alt="Twitter">
-        </a>
+  <footer id="hswfooter" class="hillsong-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/HijosDePastoresRH" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025103/002-facebook-blkbg.png"
+              alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/hijosdeministros/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025102/001-instagram-blkbg.png"
+              alt="Instagram">
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025104/003-twitter-blkbg.png"
+              alt="Twitter">
+          </a>
 
-        <a href="https://www.tiktok.com/@hdmayacucho?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025109/016-tik-tok-blkbg.png"
-            alt="TikTok">
-        </a>
-        <a href="https://www.youtube.com/@HDMAyacucho" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025106/007-youtube-blkbg.png"
-            alt="YouTube">
-        </a>
+          <a href="https://www.tiktok.com/@hdmayacucho?is_from_webapp=1&sender_device=pc" target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025109/016-tik-tok-blkbg.png"
+              alt="TikTok">
+          </a>
+          <a href="https://www.youtube.com/@HDMAyacucho" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://d1xpblio32ctey.cloudfront.net/wp-content/uploads/sites/43/2021/06/03025106/007-youtube-blkbg.png"
+              alt="YouTube">
+          </a>
 
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3>Contactos </h3>
+        <p>Email: ministerioconproposito@gmail.com</p>
+        <p>Teléfono: 925396764</p>
+        <p>Ayacucho-Huamanga</p>
       </div>
     </div>
-    <div class="footer-right">
-      <h3>Contactos </h3>
-      <p>Email: ministerioconproposito@gmail.com</p>
-      <p>Teléfono: 925396764</p>
-      <p>Ayacucho-Huamanga</p>
+    <div class="footer-bottom">
+      <p>&copy; 2024 HDM. Todos los derechos reservados.</p>
+      <p>Diseñado por
+        <a href="https://www.facebook.com/percy.condenunez.7">
+          <font color="red">Percy Conde</font>
+        </a>
+        <a href="https://github.com/percyby2000" target="_blank" style="display: inline-block; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
+            style="width: 16px; height: 16px; vertical-align: middle;">
+        </a>
+      </p>
+      <br>
+      <br>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2024 HDM. Todos los derechos reservados.</p>
-    <p>Diseñado por 
-      <a href="https://www.facebook.com/percy.condenunez.7">
-        <font color="red">Percy Conde</font>
-      </a>
-      <a href="https://github.com/percyby2000" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="20" height="20" style="vertical-align: middle;">
-      </a>
-    </p>      
-    <br>
-    <br>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="tienda.js"></script>
-<script src="script.js"></script>
+  <script src="tienda.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
