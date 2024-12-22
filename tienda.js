@@ -2,7 +2,7 @@
 
 const productos = [
     { id: 1, nombre: 'Historias Bíblicas TOMO 1', precio: 0.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 2, nombre: 'Historias Bíblicas TOMO 2-6', precio: 9.99, imagen: '/tienda/TOMO2.PNG', categoria: 'materiales' },
+    { id: 2, nombre: 'Historias Bíblicas TOMO 2-6', precio: 9.99, imagen: '/tienda/TOMO2.png', categoria: 'materiales' },
     { id: 3, nombre: 'Polera azul', precio: 25.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
     { id: 4, nombre: 'Polera roja', precio: 25.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
     { id: 5, nombre: 'Polera verde', precio: 25.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
