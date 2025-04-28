@@ -1022,17 +1022,7 @@ section {
 }
 
 
-.contact-form button {
-  width: 100%;
-  padding: 1rem;
-  background: var(--color-purple);
-  color: var(--color-white);
-  border: none;
-  border-radius: 0px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 
 /* Footer */
 footer {
