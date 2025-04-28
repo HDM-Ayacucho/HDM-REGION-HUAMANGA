@@ -983,15 +983,6 @@ section {
   }
 }
 
-/* Contact Section */
-.contact-section {
-  position: relative;
-  color: var(--color-white);
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  /* Sombra alrededor del fondo */
-}
 
 
 .contact-section::before {
@@ -1009,18 +1000,6 @@ section {
   z-index: -1;
   /* Asegura que quede detrás del contenido */
 }
-
-
-.contact-content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.contact-form {
-  margin-top: 3rem;
-}
-
 
 
 
