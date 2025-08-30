@@ -1,22 +1,18 @@
 //AGREGAR PRODUCTOS A LA TIENDA
 
 const productos = [
-    { id: 1, nombre: 'Historias Bíblicas TOMO 1', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 2, nombre: 'Historias Bíblicas TOMO 2', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 3, nombre: 'Historias Bíblicas TOMO 3', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 4, nombre: 'Historias Bíblicas TOMO 4', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 5, nombre: 'Historias Bíblicas TOMO 5', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 6, nombre: 'Historias Bíblicas TOMO 6', precio: 10.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
-    { id: 7, nombre: 'Polera azul', precio: 35.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
-    { id: 8, nombre: 'Polera roja', precio: 35.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
-    { id: 9, nombre: 'Polera verde', precio: 35.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
-    { id: 10, nombre: 'Polera amarilla', precio: 35.00, imagen: '/tienda/polera4.png', categoria: 'poleras' },
-    { id: 11, nombre: 'Gorra cruz ploma', precio: 45.00, imagen: '/tienda/gorra1.jpg', categoria: 'accesorios' },
-    { id: 12, nombre: 'Gorra cruz blanca', precio: 43.00, imagen: '/tienda/gorra2.jpg', categoria: 'accesorios' },
-    { id: 13, nombre: 'Gorra azul roja', precio: 27.00, imagen: '/tienda/gorra3.jpg', categoria: 'accesorios' },
-    { id: 14, nombre: 'Gorra chuyo plaa', precio: 15.00, imagen: '/tienda/gorra4.jpg', categoria: 'accesorios' },
-    { id: 15, nombre: 'pulsera jesus love', precio: 15.00, imagen: '/tienda/pulseralovejesus.webp', categoria: 'accesorios' },
-    { id: 16, nombre: 'pulsera jesus', precio: 15.00, imagen: '/tienda/pulserJesus.webp', categoria: 'accesorios' },
+    { id: 1, nombre: 'Historias Bíblicas TOMO 1', precio: 0.00, imagen: '/tienda/tomo1.png', categoria: 'materiales' },
+    { id: 2, nombre: 'Historias Bíblicas TOMO 2-6', precio: 9.99, imagen: '/tienda/TOMO2.png', categoria: 'materiales' },
+    { id: 3, nombre: 'Polera azul', precio: 25.00, imagen: '/tienda/polera1.png', categoria: 'poleras' },
+    { id: 4, nombre: 'Polera roja', precio: 25.00, imagen: '/tienda/polera2.png', categoria: 'poleras' },
+    { id: 5, nombre: 'Polera verde', precio: 25.00, imagen: '/tienda/polera3.png', categoria: 'poleras' },
+    { id: 6, nombre: 'Polera amarilla', precio: 25.00, imagen: '/tienda/polera4.png', categoria: 'poleras' },
+    { id: 7, nombre: 'Gorra cruz ploma', precio: 29.99, imagen: '/tienda/gorra1.jpg', categoria: 'accesorios' },
+    { id: 8, nombre: 'Gorra cruz blanca', precio: 33.00, imagen: '/tienda/gorra2.jpg', categoria: 'accesorios' },
+    { id: 9, nombre: 'Gorra azul roja', precio: 27.99, imagen: '/tienda/gorra3.jpg', categoria: 'accesorios' },
+    { id: 10, nombre: 'Gorra chuyo plaa', precio: 24.99, imagen: '/tienda/gorra4.jpg', categoria: 'accesorios' },
+    { id: 11, nombre: 'pulsera jesus love', precio: 5.00, imagen: '/tienda/pulseralovejesus.webp', categoria: 'accesorios' },
+    { id: 12, nombre: 'pulsera jesus', precio: 5.00, imagen: '/tienda/pulserJesus.webp', categoria: 'accesorios' },
 ];
 //FUNCIONES-...............
 const productoGrid = document.getElementById('producto-grid');
@@ -50,7 +46,7 @@ function renderizarProductos(productos) {
 function agregarAlCarrito(id) {
     const producto = productos.find(p => p.id === id);
     const itemEnCarrito = carrito.find(item => item.id === id);
-    
+
     if (itemEnCarrito) {
         itemEnCarrito.cantidad++;
     } else {
@@ -127,7 +123,7 @@ function actualizarCarrito() {
 function comprarPorWhatsApp() {
     const mensaje = carrito.map(item => `${item.nombre} x${item.cantidad} - S/${(item.precio * item.cantidad).toFixed(2)}`).join('\n');
     const total = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
-    const telefono = '+51910109478'; 
+    const telefono = '+51918862125';
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent('Quiero comprar:\n' + mensaje + '\n\nTotal: S/' + total.toFixed(2))}`;
     window.open(url, '_blank');
 }

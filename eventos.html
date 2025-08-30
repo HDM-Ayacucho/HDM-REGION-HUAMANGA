@@ -8,25 +8,31 @@
   <link rel="icon" href="/img/icotitulo.ico" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap"  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link   href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="eventos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-  <a href="https://wa.me/51925396764" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/+51918862125" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
     <i class="whatsapp-icon"></i>
   </a>
   <header>
     <div class="container">
       <nav>
-        <div class="logo">
-          <img src="/img/logo (2).ico" alt="HDM" height="40">
-          <img src="/img/Logo-asambleas.png" alt="HDM" height="40">
+        <div class="logo" onclick="window.location.href='index.html'">
+          <img class="first-logo" src="/img/logo (2).ico" alt="HDM" height="40">
+          <img class="second-logo" src="/img/Logo-asambleas.png" alt="HDM" height="40">
         </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
@@ -42,48 +48,97 @@
     </div>
   </header>
 
-  <section class="events">
-    <h2>Próximos Eventos</h2>
-    <div class="events-container">
-      <div class="event-card" data-event-id="1">
-        <div class="event-image">
-          <img src="/img/neets.png" alt="Noche de talentos">
-        </div>
-        <div class="event-details">
-          <h3>Talentos Teens</h3>
-          <p class="event-info"><i class="fas fa-calendar-alt"></i> 13 de Diciembre 2024</p>
-          <p class="event-info"><i class="fas fa-clock"></i> 4:00 PM</p>
-          <p class="event-info"><i class="fas fa-map-marker-alt"></i> Teatro Municipal</p>
-          <p class="event-description">🚨¿Estas listo? 💪
-            Prepara a tu iglesia! Y sé parte de lo que se viene.</p>
-          <p class="event-price"> Entrada libre</p>
-          <p class="tickets-left">300<span class="ticket-count"> Personas</span></p>
-          <button formsappId="66e07006b22b80fc43ba97f1"></button>
-<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('66e07006b22b80fc43ba97f1', 'slider', {'overlay':'rgba(71,154,165,0.5)','button':{'color':'#1F1BFF','text':'INSCRIBIRME'},'width':'767px','height':'100vh','align':'right'});"></script>
-        </div>
-      </div>
-      <div class="event-card" data-event-id="2">
-        <div class="event-image">
-          <img src="/img/unoencristo.png" alt="Campamento Uno en Cristo">
-        </div>
-        <div class="event-details">
-          <h3>Conferencia</h3>
-          <p class="event-info"><i class="fas fa-calendar-alt"></i> 13 - 16 de febrero de 2025</p>
-          <p class="event-info"><i class="fas fa-clock"></i> 2:00 PM </p>
-          <p class="event-info"><i class="fas fa-map-marker-alt"></i> "Colegio apostol pablo"</p>
-          <p class="event-description">Dirigido a niños y adolecentes, tres dias  de talleres y misiones.</p>
-          <p class="event-price">Desde S/. 100.00 </p>
-          <p class="tickets-left">Cupos disponibles: <span class="ticket-count"> + 200</span></p>
-          <button formsappId="66e1b63a1e64fdd5711c2e59"></button>
-          <script src="https://forms.app/static/embed.js" type="text/javascript" async defer
-            onload="new formsapp('66e1b63a1e64fdd5711c2e59', 'slider', {'overlay':'rgba(5,3,127,0.5)','button':{'color':'#6D1BB7','text':'INSCRIBIRME'},'width':'767px','height':'100vh','align':'right'});"></script>
+
         </div>
       </div>
     </div>
   </section>
-  <script src="evento.js"></script>
 
+  <section id="location" class="location-section">
+    <div class="location-container">
+      <div class="location-info" data-aos="fade-right">
+        <h2>Ubicación</h2>
+        <div class="location-details">
+          <div class="location-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Colegio Apóstol Pablo</p>
+          </div>
+          <div class="location-item">
+            <i class="fas fa-clock"></i>
+            <p>Horario: 9:00 AM - 6:00 PM</p>
+          </div>
+          <div class="location-item">
+            <i class="fas fa-phone"></i>
+            <p>Contacto: +51 918 862 125</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-container" data-aos="fade-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.023418562719!2d-74.21716702506782!3d-13.16523216373266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9112873acf2ec1ff%3A0xd8b417ae14cba883!2sColegio%20Ap%C3%B3stol%20Pablo!5e1!3m2!1ses-419!2spe!4v1734879576668!5m2!1ses-419!2spe"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
+  <section id="schedule" class="schedule-section">
+    <h2 data-aos="fade-up">CRONOGRAMA</h2>
+    <div class="schedule-container" data-aos="fade-up">
+      <div class="schedule-item">
+        <div class="event-info">
+          <h3>Descárgalo aquí</h3>
+          <a href="ruta-del-archivo.pdf" download class="download-link">
+            <button class="download-button">
+              <span class="icon">&#128229;</span>
+              Descargar PDF
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="downloads" class="downloads-section">
+    <div class="downloads-container">
+      <h2 data-aos="fade-up">DOCUMENTOS IMPORTANTES</h2>
+      <div class="downloads-grid">
+        <!-- Carta de Autorización -->
+        <div class="download-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="download-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Carta de Autorización</h3>
+          <p>Para menores de edad</p>
+          <a href="somosuno/CARTA DE AUTORIZACIÓN - conferencia uno en Cristo.pdf" download class="download-btn">
+            <i class="fas fa-download"></i>
+            Descargar
+          </a>
+        </div>
+        
+        <!-- Lineamientos -->
+        <div class="download-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="download-icon">
+            <i class="fas fa-list-alt"></i>
+          </div>
+          <h3>Lineamientos</h3>
+          <p>Normas y pautas del evento</p>
+          <a href="somosuno/ACUERDO DE REGLAS Y NORMAS DE CONDUCTA CONFERENCIA UNO EN CRISTO.pdf" download class="download-btn">
+            <i class="fas fa-download"></i>
+            Descargar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+<section id="contact" class="contact-section">
+  <div class="contact-content">
+    <h2 data-aos="fade-up">ÚNETE A NUESTRA COMUNIDAD DE VOLUNTARIADO</h2>
+<button formsappId="680fb275d77c45bdc9a37ab6"></button>
+<script src="https://forms.app/cdn/embed.js" type="text/javascript" async defer onload="new formsapp('680fb275d77c45bdc9a37ab6', 'popup', {'button':{'color':'voluntariado','text':'voluntariad'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__zoomIn','exit':'animate__zoomOut'}}, 'https://3lcat0n8.forms.app');"></script>
+  </div>
+</section>
 
 
 
@@ -130,16 +185,67 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 HDM - Región huamanga. Todos los derechos reservados.</p>
-      <p>Diseñado por <a href="https://www.facebook.com/percy.condenunez.7">Percy Conde</a></p>
+      <p>&copy; 2024 HDM. Todos los derechos reservados.</p>
+      <p>Diseñado por
+        <a href="https://www.facebook.com/percy.condenunez.7">
+          <font color="red">Percy Conde</font>
+        </a>
+        <a href="https://github.com/percyby2000" target="_blank" style="display: inline-block; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
+            style="width: 16px; height: 16px; vertical-align: middle;">
+        </a>
+      </p>
       <br>
       <br>
     </div>
   </footer>
+  <script>
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    // Esperar a que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function () {
+      // Inicializar AOS
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+
+      // Seleccionar todas las tarjetas
+      const cards = document.querySelectorAll('.squadron-card');
+
+      // Agregar el evento click a cada tarjeta
+      cards.forEach(card => {
+        card.addEventListener('click', function () {
+          // Toggle de la clase flipped
+          this.classList.toggle('flipped');
+
+          // Opcional: Remover la clase de otras tarjetas
+          cards.forEach(otherCard => {
+            if (otherCard !== this) {
+              otherCard.classList.remove('flipped');
+            }
+          });
+        });
+      });
+    });
+
+    // Opcional: Remover la clase flipped al hacer click fuera de las tarjetas
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.squadron-card')) {
+        document.querySelectorAll('.squadron-card').forEach(card => {
+          card.classList.remove('flipped');
+        });
+      }
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="tienda.js"></script>
   <script src="script.js"></script>
+  <script src="evento.js"></script>
 
 
 </body>
